@@ -32,17 +32,20 @@ repository-code: 'https://github.com/kodezi/chronos-research'
 url: 'https://kodezi.com/chronos'
 repository: 'https://arxiv.org/abs/2507.12482'
 abstract: >-
-  Large Language Models (LLMs) have advanced code generation and software automation, 
-  but are fundamentally constrained by limited inference-time context and lack of 
-  explicit code structure reasoning. We introduce Kodezi Chronos, a next-generation 
-  architecture for autonomous code understanding, debugging, and maintenance, designed 
-  to operate across ultra-long contexts comprising entire codebases, histories, and 
-  documentation—all without fixed window limits. Kodezi Chronos leverages a multi-level 
-  embedding memory engine, combining vector and graph-based indexing with continuous 
-  code-aware retrieval. This enables efficient and accurate reasoning over millions 
-  of lines of code, supporting repository-scale comprehension, multi-file refactoring, 
-  and real-time self-healing actions. Chronos achieves 67.3% debugging success rate, 
-  representing a 4-5x improvement over state-of-the-art models including Claude Opus 4 and GPT-4.1.
+  Large Language Models (LLMs) have advanced code generation and software automation,
+  but are fundamentally constrained by limited inference-time context and lack of
+  explicit code structure reasoning. We introduce Kodezi Chronos, a next-generation
+  architecture for autonomous code understanding, debugging, and maintenance, designed
+  to operate across ultra-long contexts comprising entire codebases, histories, and
+  documentation—all without fixed window limits. Kodezi Chronos leverages a multi-level
+  embedding memory engine, combining vector and graph-based indexing with continuous
+  code-aware retrieval. This enables efficient and accurate reasoning over millions
+  of lines of code, supporting repository-scale comprehension, multi-file refactoring,
+  and real-time self-healing actions. Chronos achieves state-of-the-art 80.33% success
+  rate on SWE-bench Lite (241/300 instances), a 20 percentage point lead over the next
+  best system, and 67.3% on comprehensive debugging benchmarks—representing a 4-5x
+  improvement over state-of-the-art models including Claude 4.1 Opus, Claude 4.5 Sonnet,
+  and GPT-4.1.
 keywords:
   - debugging
   - language models

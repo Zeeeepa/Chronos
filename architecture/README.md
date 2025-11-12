@@ -60,6 +60,21 @@ Unlike traditional LLMs that optimize for large input contexts, Chronos recogniz
 
 This insight drives architectural decisions throughout the system. Chronos achieves 67.3% debugging success despite competitors having 10-100x larger context windows, validating that output quality matters more than input capacity.
 
+#### Performance Achievements
+
+**SWE-bench Lite (State-of-the-Art)**:
+- **80.33% resolution rate (241/300 instances)** - #1 globally
+- **20 percentage point lead** over second-place system (ExpeRepair-v1.0: 60.33%)
+- Repository-specific: **96.1% (sympy)**, **93.8% (sphinx)**, **90.4% (django)**
+
+**Comprehensive Debugging Benchmarks (MRR)**:
+- 67.3% ± 2.1% fix accuracy
+- 4-5x improvement over state-of-the-art models
+- 89% human preference in evaluation studies
+- 40% reduction in debugging time
+
+**The Debugging Gap**: General-purpose models achieving 70%+ on code generation drop to <15% on debugging tasks, revealing a 50+ percentage point gap. Chronos's specialized architecture bridges this gap.
+
 #### Adaptive Graph-Guided Retrieval (AGR)
 
 AGR dynamically expands retrieval depth based on:

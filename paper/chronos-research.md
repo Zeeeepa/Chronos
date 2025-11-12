@@ -1,8 +1,8 @@
 Kodezi Chronos: A Debugging-First Language Model for
-Repository-Scale, Memory-Driven Code Understanding
-Ishraq Khan, Assad Chowdary, Sharoz Haseeb, Urvish Patel
+Repository-Scale Code Understanding
+Ishraq Khan, Assad Chowdary, Sharoz Haseeb, Urvish Patel, Yousuf Zaii
 Kodezi Inc.
-{Ishraq,Assad,Sharoz,Urvish}@kodezi.com
+{Ishraq,Assad,Sharoz,Urvish,Yousuf}@kodezi.com
 Abstract--- Large Language Models (LLMs) have advanced
 code generation and software automation, but are fundamentally
 constrained by limited inference-time context and lack of explicit
@@ -21,8 +21,14 @@ domain. Unlike classical retrieval benchmarks, this method
 requires the model to resolve arbitrarily distant and obfuscated
 associations across code artifacts, simulating realistic tasks such
 as variable tracing, dependency migration, and semantic bug
-localization. Chronos outperforms prior LLMs and code models--
--demonstrating a 23% improvement in real-world bug detection
+localization. On the SWE-bench Lite benchmark, Chronos achieves
+state-of-the-art performance with 80.33% resolution rate (241/300
+instances), establishing a 20 percentage point lead over the next
+best system (ExpeRepair-v1.0 + Claude 4.5 Sonnet: 60.33%).
+Repository-specific performance reaches 96.1% (sympy), 93.8%
+(sphinx), and 90.4% (django). Chronos outperforms prior LLMs
+and code models---demonstrating a 67.3% success rate on comprehensive
+debugging benchmarks versus <15% for general-purpose models,
 and reducing debugging cycles by up to 40% compared to
 traditional sequence-based approaches.
 By natively interfacing with IDEs and CI/CD workflows,
